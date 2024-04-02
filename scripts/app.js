@@ -740,6 +740,7 @@ function init() {
     pointsBox.classList.remove('shake_box')
     liveBox.classList.remove('shake_box')
     hsBox.classList.remove('shake_box')
+    startGame()
     // startGamePage.classList.remove('none') // make start page visible
   }
 
