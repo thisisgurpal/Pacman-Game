@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>GRID GAME!</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/app.js" charset="utf-8"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <audio class='background_audio'></audio>
+  <audio class='points_audio'></audio>
+  <audio class='game_audio'></audio>
+  <div class='start_game'>
+    <div id='start_buttons_align'>
+      <div class='start_title'></div>
+      <div class='start_grid'></div>
+      <h1 class='pulse start'>CLICK THE GHOST...</h1>
+    </div>
+  </div>
+  <div class='character_game none'>
+
+    <div id='character_buttons_align'>
+      <h1 class='pulse character_title'>CHOOSE CHARACTER</h1>
+      <button class='character_buttons' id='pacman1'><img class='img_button' src="images/pacman_char_button.gif"
+          alt="">PACMAN</button>
+      <button class='character_buttons' id='pacman2'><img class='img_button' src="images/cookie_button.gif"
+          alt="">COOKIE MONSTER</button>
+    </div>
+  </div>
+  <div class='three_two_one none'>
+    <p class='three_two_one_value'></p>
+  </div>
+  <div class='menu_game none'>
+    <div id='menu_buttons_align'>
+      <button class='menu_buttons' id='resume'>RESUME</button>
+      <button class='menu_buttons' id='quit'>QUIT</button>
+      <button class='menu_buttons' id='instructions'>HELP</button>
+    </div>
+  </div>
+  <div class='lose_life none'>
+    <div class='lose_pic_align'>
+      <div class='lose_pic'></div>
+    </div>
+  </div>
+  <div class='help none'>
+    <div class='help_buttons_align'>
+      <div class='help_pic' id='pacman_help'>PACMAN</div>
+      <div class='help_pic'>- USE ARROW KEYS TO MOVE PACMAN</div>
+      <div class='help_pic'>- PACMAN CAN EAT SCARED GHOSTS</div>
+      <div class='help_pic' id='pacman_help'>GHOSTS</div>
+      <div class='help_pic'>- GHOSTS CAN EAT YOU IF THEY ARE NOT BLUE</div>
+      <div class='help_pic'>- IF GHOST ARE BLUE THEY ARE SCARED</div>
+      <div class='help_pic' id='pacman_help'>SPECIAL POINTS</div>
+      <div class='help_pic'>- SPECIAL POINTS MAKE GHOSTS SCARED FOR 10 SECONDS</div>
+      <div class='help_pic' id='pacman_help'>EXTRA POINTS</div>
+      <div class='help_pic'>- COLLECT A SPECIAL POINT</div>
+      <div class='help_pic'>- EAT A SCARED GHOST</div>
+      <button class='help_buttons' id='return'>RETURN</button>
+    </div>
+  </div>
+  <div class="grid-wrapper">
+    <div class='level'>LEVEL: <span id='level_value'></span></div>
+    <div id='values_box'>
+      <div id='points_box'>
+        POINTS: <span id='points_value'></span>
+      </div>
+      <div id='hs_box'>
+        HIGHSCORE: <span id='hs_value'></span>
+      </div>
+    </div>
+    <div class="grid"></div>
+    <div id='lives_box'>LIVES: <span id='lives_value'></span>
+    </div>
+    <button class='menu'>MENU</button>
+  </div>
+</body>
+
+</html>
